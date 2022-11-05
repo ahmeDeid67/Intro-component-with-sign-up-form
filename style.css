@@ -38,7 +38,7 @@ main {
   background-position: center;
   background-color: var(--Red);
   display: flex;
-  padding: 100px;
+  padding: 120px;
 }
 
 .breif {
@@ -78,13 +78,11 @@ form button[type="button"] {
   -o-border-radius: 8px;
   margin-bottom: 20px;
   line-height: 1.6;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-form button[type="button"] > a {
-  color: #fff;
-}
-
-form button[type="button"] > a span {
+form button[type="button"] > span {
   color: var(--Grayish-Blue);
 }
 
@@ -130,7 +128,8 @@ form button[type="button"] > a span {
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 10px;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
+  cursor: pointer;
 }
 
 .form p {
