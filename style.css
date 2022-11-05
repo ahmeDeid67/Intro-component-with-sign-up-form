@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* width: 375, 1440 */
+
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  line-height: 1.2;
+}
+
+main {
+  width: 100%;
+  max-width: 1440px;
+  background-image: url("images/bg-intro-desktop.png");
+  background-size: cover;
+  background-position: center;
+  background-color: var(--Red);
+  display: flex;
+  padding: 100px;
+}
+
+.breif {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  margin: auto 0;
+}
+
+.breif h1 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.breif p {
+  line-height: 1.6;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+form button[type="button"] {
+  padding: 20px;
+  border: none;
+  background-color: var(--Blue);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+form button[type="button"] > a {
+  color: #fff;
+}
+
+form button[type="button"] > a span {
+  color: var(--Grayish-Blue);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.form input {
+  padding: 20px;
+  border: 1px solid var(--Grayish-Blue);
+  margin-bottom: 20px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  font-weight: bold;
+}
+
+.form input:focus {
+  outline-color: #00000055;
+}
+
+.form button {
+  padding: 20px;
+  background-color: var(--Green);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  font-size: 0.7rem;
+}
+
+.form p {
+  color: var(--Grayish-Blue);
+  font-size: 10px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.form p a {
+  color: var(--Red);
+  font-weight: 700;
+}
+
+@media (max-width: 376px) {
+  body {
+    width: 375px;
+    max-width: 100%;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+    background-image: url("images/bg-intro-mobile.png");
+  }
+  .breif {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .breif h1 {
+    font-size: 1.6rem;
+  }
+  .breif p {
+    font-size: 0.9rem;
+  }
+  form {
+    width: 85%;
+    margin: 0 auto;
+  }
+  form button[type="button"] {
+    padding: 20px 80px;
+  }
+}
